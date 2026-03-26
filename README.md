@@ -1,2 +1,2 @@
 # hotel-management-system
-A hotel management system project developed using Java and MySQL.
+A web-based Resume Ranking System using Python (Flask), MySQL, and HTML/CSS.
