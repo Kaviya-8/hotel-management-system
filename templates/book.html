@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="booking-page"> <!-- Add a class for the booking page -->
+    <h1>Book a Room</h1>
+    <form method="POST" action="{{ url_for('book_room') }}">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="room_id">Room Type</label>
+            <select id="room_id" name="room_id" required>
+                {% for room in rooms %}
+                    <option value="{{ room[0] }}">{{ room[1] }} - ${{ room[2] }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="check_in">Check-in Date</label>
+            <input type="date" id="check_in" name="check_in" required>
+        </div>
+        <div>
+            <label for="check_out">Check-out Date</label>
+            <input type="date" id="check_out" name="check_out" required>
+        </div>
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

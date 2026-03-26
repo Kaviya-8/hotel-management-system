@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="feedback-page"> <!-- Add the feedback-page class to the body tag -->
+    <h1>Provide Your Feedback</h1>
+    <div class="feedback-form-container">
+        <form method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+            <label for="message">Message</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

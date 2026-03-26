@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="cancel-page"> <!-- Add the cancel-page class to the body tag -->
+    <h1>Cancel Your Booking</h1>
+    <form method="POST" action="{{ url_for('cancel_booking') }}">
+        <div class="form-group">
+            <label for="booking_id">Enter Your Booking ID</label>
+            <input type="text" class="form-control" id="booking_id" name="booking_id" placeholder="Enter Booking ID" required>
+        </div>
+        <div class="form-group">
+            <label for="reason">Reason for Cancellation</label>
+            <textarea class="form-control" id="reason" name="reason" placeholder="Enter your reason" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Cancel Booking</button>
+    </form>
+</body>
+</html>

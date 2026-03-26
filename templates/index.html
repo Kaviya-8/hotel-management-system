@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-page">
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+    </header>
+    <main>
+        <div class="nav-box">
+        <a href="/available">View Available Rooms</a>
+        <a href="/book">Book a Room</a>
+        <a href="/cancel">Cancel Booking</a>
+        <a href="/feedback">Give Feedback</a>
+        <a href="/payment">Make a Payment</a>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Management System | <a href="/">Home</a></p>
+    </footer>
+</body>
+</html>

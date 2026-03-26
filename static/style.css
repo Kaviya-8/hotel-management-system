@@ -1,0 +1,276 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color:black;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Page Backgrounds */
+/* Home Page Specific Styles */
+/* Home Page Specific Styles */
+.home-page {
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.home-page h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Box Container */
+.home-page .nav-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Navigation Box Links */
+.home-page .nav-box a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 200px; /* Fixed width for uniformity */
+}
+
+.home-page .nav-box a:hover {
+    background: rgba(255, 215, 0, 0.9); /* Golden hover effect */
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+/* Footer */
+.home-page footer {
+    margin-top: 40px;
+    color: lightgray;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.home-page footer a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.home-page footer a:hover {
+    color: cyan;
+}
+
+
+
+body.available-rooms-page {
+    background: url('/static/background_available_rooms.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+body.booking-page {
+    background: url('/static/background_booking.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.confirmation-page {
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.cancel_success-page {
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+body.feedback-page {
+    background: url('/static/background_feedback.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.cancel-page {
+    background: url('/static/background_cancel.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.payment-page {
+    background: url('/static/background_payment.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Form Styling */
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 30px auto;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Available Rooms Table */
+.availability-table {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.availability-table th, .availability-table td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.availability-table th {
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+}
+
+.availability-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.availability-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Payment Form */
+.payment-form {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-form label {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.payment-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.payment-form button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.payment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Feedback Form */
+.feedback-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+}
+
+.feedback-section textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cyan;
+}
