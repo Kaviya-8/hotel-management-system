@@ -1,2 +1,2 @@
 # hotel-management-system
-A web-based Resume Ranking System using Python (Flask), MySQL, and HTML/CSS.
+A web-based Hotel Management System using Python (Flask), MySQL, and HTML/CSS.
